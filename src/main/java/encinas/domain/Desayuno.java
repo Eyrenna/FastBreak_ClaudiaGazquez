@@ -1,17 +1,14 @@
 package encinas.domain;
 
 import encinas.interfaces.Item;
-import encinas.items.Bebida;
-import encinas.items.Cereales;
-
-import java.util.ArrayList;
+import java.util.HashSet;
 
 
 public class Desayuno {
 
     //Atributos
 
-    private ArrayList items = new ArrayList<Item>();
+    private HashSet<Item> items = new HashSet();
     private Float coste = null;
 
     //Constructor
@@ -21,11 +18,11 @@ public class Desayuno {
 
     //Getters $ Setters
 
-    public ArrayList getItems() {
+    public HashSet<Item> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList items) {
+    public void setItems(HashSet items) {
         this.items = items;
     }
 
@@ -35,5 +32,11 @@ public class Desayuno {
 
     public void setCoste(Float coste) {
         this.coste = coste;
+    }
+
+    public void mostrarItems() {
+        for (Item item: items) {
+
+        }
     }
 }

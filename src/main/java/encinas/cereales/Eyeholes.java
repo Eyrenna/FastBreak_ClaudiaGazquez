@@ -5,7 +5,7 @@ import encinas.items.Cereales;
 public class Eyeholes extends Cereales {
 
     //Atributos
-    private String nombre = "eyeholes";
+    private String nombre = "Eyeholes";
     private Float pvp = 25.0f;
     private static Eyeholes eyeholes = null;
 

@@ -9,6 +9,8 @@ import encinas.interfaces.Item;
 
 public class FastBreakTruck {
 
+
+
     //Constructor
     public FastBreakTruck() {
     }
@@ -16,8 +18,8 @@ public class FastBreakTruck {
     //Métodos
     public static Desayuno prepararEyeHoles(){
         Desayuno desayuno = new Desayuno();
-        Item smiggles = new Smiggles();
-        Item fleebJuice = new FleebJuice();
+        Smiggles smiggles = Smiggles.getSmiggles(Smiggles.getNombre,Smiggles.getPvp);
+        FleebJuice fleebJuice = FleebJuice.getFleebJuice(FleebJuice.getNombre, FleebJuice.getPvp);
         desayuno.getItems().add(smiggles);
         desayuno.getItems().add(fleebJuice);
         return desayuno;
@@ -25,10 +27,10 @@ public class FastBreakTruck {
 
     public static Desayuno prepararSmiggles(){
         Desayuno desayuno = new Desayuno();
-        Item eyeholes = new Eyeholes();
-        Item TurbulentJuice = new TurbulentJuice();
+        Eyeholes eyeholes = Eyeholes.getEyeholes(Eyeholes.getNombre, Eyeholes.getPvp);
+        TurbulentJuice turbulentJuice = TurbulentJuice.getTurbulentJuice(TurbulentJuice.getNombre, TurbulentJuice.getPvp);
         desayuno.getItems().add(eyeholes);
-        desayuno.getItems().add(TurbulentJuice);
+        desayuno.getItems().add(turbulentJuice);
         return desayuno;
     }
 

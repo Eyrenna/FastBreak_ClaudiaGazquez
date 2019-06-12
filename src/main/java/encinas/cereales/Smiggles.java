@@ -5,7 +5,7 @@ import encinas.items.Cereales;
 public class Smiggles extends Cereales {
 
     //Atributos
-    private String nombre = "smiggles";
+    private String nombre = "Smiggles";
     private Float pvp = 50.0f;
     private static Smiggles smiggles = null;
 
